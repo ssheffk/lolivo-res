@@ -62,7 +62,7 @@ const Header: React.FC = () => {
               <li key={index}>
                 <Link
                   href={item.name === "home" ? `/` : `/${item.link}`}
-                  className="text-lg leading-none tracking-[-0.41px] uppercase md:text-sm"
+                  className="text-lg leading-none tracking-[-0.41px] uppercase md:text-sm text-[#808000]"
                 >
                   {item.bgName}
                 </Link>
@@ -71,13 +71,13 @@ const Header: React.FC = () => {
             <li>
               <Link
                 href="/contact"
-                className="text-lg leading-none tracking-[-0.41px] uppercase md:hidden"
+                className="text-lg leading-none tracking-[-0.41px] uppercase md:hidden text-[#808000]"
               >
                 Контакти
               </Link>
             </li>
           </ul>
-          <div className="flex justify-end max-md:hidden md:flex-1">
+          <div className="flex justify-end max-md:hidden md:flex-1 text-[#808000]">
             <ButtonLink to="/contact" className="uppercase">
               <span>Контакти</span>
             </ButtonLink>

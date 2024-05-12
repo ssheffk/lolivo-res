@@ -9,10 +9,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        appAccent: '#A48A63',
+        appAccent: '#3b3a38',
         appBody: '#F4F2E8',
         appText: '#272424',
         appGray: {
+          lolivo: '#808000',
           100: '#E0E0E0',
           200: '#6A6A75',
           300: '#63635F',

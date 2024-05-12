@@ -3,12 +3,12 @@ import HomePageDivider from "./Divider";
 
 import Image from "next/image";
 
-import Entrance from "./../../../assets/media/entrance-1.jpg";
-import Pizza from "./../../../assets/media/pizza.png";
-import Selfie from "./../../../assets/media/selfie.jpg";
-import Playground from "./../../../assets/media/playground.jpg";
-import Terrace from "./../../../assets/media/terrace.jpg";
-
+import Entrance from "./../../../assets/media/main.jpeg";
+import Pizza from "./../../../assets/media/pizza-bar.jpeg";
+import Selfie from "./../../../assets/media/selfie-podiumm.jpeg";
+import Playground from "./../../../assets/media/kids.jpeg";
+import Terrace from "./../../../assets/media/terrace.jpeg";
+import EntranceTwo from "./../../../assets/media/main2.jpeg";
 interface HomepageAmbienceProps {
   data: any;
 }
@@ -20,8 +20,12 @@ interface RestaurantSection {
 
 const restaurantSections: RestaurantSection[] = [
   {
-    title: "Главна зала",
+    title: "Вътрешна зала",
     image: Entrance,
+  },
+  {
+    title: "Селфи зона",
+    image: Selfie,
   },
   {
     title: "Пицария",
@@ -29,15 +33,15 @@ const restaurantSections: RestaurantSection[] = [
   },
   {
     title: "Селфи зона",
-    image: Selfie,
-  },
-  {
-    title: "Детски център",
     image: Playground,
   },
   {
     title: "Тераса",
     image: Terrace,
+  },
+  {
+    title: "Вътрешна зала",
+    image: EntranceTwo,
   },
 ];
 const HomepageAmbience: React.FC<HomepageAmbienceProps> = ({ data }) => {
@@ -49,11 +53,8 @@ const HomepageAmbience: React.FC<HomepageAmbienceProps> = ({ data }) => {
             [ 2 ]
           </div>
           <h2 className="text-lg leading-none uppercase font-Gloock mb-4 lg:text-5xl lg:leading-none lg:mb-6">
-            Текс за снимките и атмосферата
+            Ресторанта разполага с
           </h2>
-          <p className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto mb-8 lg:text-base lg:leading-[1.3] lg:mb-[88px]">
-            {"Текс да бъде добавен"}
-          </p>
         </div>
         <div className="grid grid-cols-2 gap-4 auto-rows-fr lg:gap-6">
           {restaurantSections.map((item, index) => (

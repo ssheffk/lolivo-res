@@ -14,11 +14,11 @@ const footerData: FooterData[] = [
     content: [
       {
         title: "Facebook",
-        link: "https://www.facebook.com/lolivo.bg/",
+        link: "https://www.facebook.com/profile.php?id=61554922003302",
       },
       {
         title: "Instagram",
-        link: "https://www.instagram.com/lolivo.bg/",
+        link: "https://www.instagram.com/lolivo_bar_and_dinner/?igsh=MXFob2kxeDR1NGViOQ==",
       },
     ],
   },
@@ -26,11 +26,7 @@ const footerData: FooterData[] = [
     title: "Запитвания",
     content: [
       {
-        title: "lolivo@gmail.com",
-        link: "",
-      },
-      {
-        title: "+(359) 896612294",
+        title: "0882 244 244",
         link: "",
       },
     ],
@@ -51,12 +47,6 @@ const Footer: React.FC<FooterProps> = ({ data }) => {
     <footer className="bg-appText py-10 md:py-12">
       <div className="container">
         <div className="md:grid md:grid-cols-[auto,1fr]">
-          <p
-            className="text-sm leading-[1.3] uppercase tracking-[-0.41px] text-appGray-500 text-center mb-8
-                    md:text-base md:leading-[1.3] md:text-left"
-          >
-            град Шумен, ул. Спартак 24
-          </p>
           <nav className="grid grid-cols-[repeat(2,auto)] justify-between gap-x-12 gap-y-8 mx-auto mb-10 max-md:max-w-[225px] md:mb-20 lg:grid-cols-[repeat(4,auto)] lg:gap-20 xl:gap-[128px]">
             {footerData.map((col, index) => (
               <div key={index} className="content footer--nav-col">

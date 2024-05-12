@@ -16,11 +16,11 @@ const ContactPage: React.FC<any> = ({ header, footer, page }) => {
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto lg:max-w-[560px] xl:px-0">
             <h1 className="text-xl leading-none font-Gloock uppercase text-center mb-8 lg:text-5xl lg:leading-none lg:mb-20">
-              Тук можете да ни намерите
+              Къде можете да ни намерите
             </h1>
 
             <p className="contactPage--description text-sm leading-[1.3] tracking-[-0.41px]  text-center text-appGray-700 mb-8 lg:text-base lg:leading-[1.3] lg:mb-12">
-              Работно време от 09:00ч до 21:00ч (Понеделник-Неделя)
+              Работно време от 08:00ч до 24:00ч (Понеделник-Неделя)
             </p>
             <div className="bg-[#E5E4DA] rounded-2xl p-4 mb-8 lg:mb-10">
               <Image
@@ -44,58 +44,4 @@ const ContactPage: React.FC<any> = ({ header, footer, page }) => {
   );
 };
 
-// export const getStaticProps: GetStaticProps<
-//   PageProps<ContactPageData>
-// > = async () => {
-//   // const client = getBcmsClient();
-//   try {
-//     const header = Header;
-//     const footer = Footer;
-//     const { header, footer } = await getHeaderAndFooter(client);
-//     const contactPage = (await client.entry.get({
-//       // Template name or ID
-//       template: "contact_page",
-//       // Entry slug or ID
-//       entry: "contact-us",
-//     }));
-//     if (!contactPage) {
-//       throw new Error("Contact page entry does not exist.");
-//     }
-
-//     return {
-//       props: {
-//         header,
-//         footer,
-//         page: {
-//           meta: contactPage.meta.en,
-//         },
-//       },
-//     };
-//   } catch (error) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-// };
-// export function getStaticProps({ params, preview = false, previewData }) {
-//   const cityData = dataFiltered.find( city => city.citySlug === params.slug )
-//   const cityMapImagePath = path.join(process.cwd(), `/public/static-maps/${cityData.imgPath}`)
-//   let cityMapImageRes, cityMapImageProcessed
-
-//   try {
-//     cityMapImageRes = await fs.readFile(cityMapImagePath)
-//     cityMapImageProcessed = Buffer.from(cityMapImageRes).toString('base64')
-//   } catch {
-//     cityMapImageProcessed = null
-//   }
-
-//   return {
-//     props: {
-//       preview,
-//       cityData: cityData,
-//       cityMapImage: cityMapImageProcessed
-//     },
-//     revalidate: 60,
-//   };
-// }
 export default ContactPage;

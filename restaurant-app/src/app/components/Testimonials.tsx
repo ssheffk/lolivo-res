@@ -19,9 +19,6 @@ const HomepageTestimonials: React.FC<HomepageTestimonialsProps> = ({
           <h2 className="text-lg leading-none font-Gloock mb-4 lg:text-5xl lg:leading-none lg:mb-6">
             {"Добре дошли в L`Оlivo"}
           </h2>
-          <p className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto mb-10 lg:text-base lg:leading-[1.3] lg:mb-[45px]">
-            Добавен текс.
-          </p>
         </div>
       </div>
     </section>

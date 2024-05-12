@@ -21,9 +21,6 @@ const EventsPageEventCard: React.FC<EventsPageEventCardProps> = ({ card }) => {
       <h3 className="leading-none font-Gloock mb-[14px] lg:text-[32px] lg:leading-none lg:mb-6">
         {card.title}
       </h3>
-      <p className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-300 lg:text-xl lg:leading-none">
-        {card.description}
-      </p>
     </article>
   );
 };

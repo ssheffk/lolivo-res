@@ -14,7 +14,7 @@ import Image from "next/image";
 const NeverlandPage: React.FC = () => {
   return (
     <PageWrapper page={"page"} header={"header"} footer={"footer"}>
-      <section className="pt-[108px] pb-10 overflow-hidden md:pb-20 lg:pt-[218px] lg:pb-[120px] min-h-dvh">
+      <section className="pt-[108px] pb-10 overflow-hidden md:pb-20 lg:pt-[218px] lg:pb-[120px] min-h-[130vh]">
         <div className="container max-w-[1198px] ">
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto mb-10 lg:max-w-[745px] lg:mb-20 xl:px-0">
@@ -26,11 +26,11 @@ const NeverlandPage: React.FC = () => {
               className="w-full h-auto cover rounded-[10px] overflow-hidden pointer-events-auto"
             />
             <h1 className="text-xl leading-none font-Gloock uppercase text-center mb-6 lg:text-5xl lg:leading-none">
-              Coming soon...
+              Очаквайте скоро ...
             </h1>
           </div>
         </div>
-        <div className="container">
+        {/* <div className="container">
           {
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 lg:gap-8">
               {[
@@ -46,7 +46,7 @@ const NeverlandPage: React.FC = () => {
               ))}
             </div>
           }
-        </div>
+        </div> */}
       </section>
     </PageWrapper>
   );

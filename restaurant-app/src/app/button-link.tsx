@@ -24,11 +24,11 @@ const ButtonLink: React.FC<ButtonLinkProps> = ({
   onClick,
 }) => {
   const linkClasses = classnames(
-    "group relative flex items-center text-sm leading-none rounded-[32px] border transition-all duration-300 focus:outline-none lg:text-base lg:leading-none",
+    "group relative flex items-center text-sm leading-none rounded-[32px] border transition-all duration-300 focus:outline-none lg:text-base lg:leading-none border-[#808000]",
     {
       "bg-[#D1D0C7] text-white border-transparent": theme === "fill",
       "bg-appAccent text-white border-transparent": theme === "accent",
-      "border-appText": theme !== "fill" && theme !== "accent",
+      "border-appGrey-lolivo": theme !== "fill" && theme !== "accent",
       "px-4 py-[17px] lg:p-6": size === "lg",
       "px-4 py-[13px] md:px-6 md:py-4": size === "regular",
     }
