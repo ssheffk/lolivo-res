@@ -18,12 +18,35 @@ import Page_14 from "./../../../assets/media/menu/14.jpg";
 import Page_15 from "./../../../assets/media/menu/15.jpg";
 
 import Image from "next/image";
+
 function MyMenu(props: any) {
   return (
     <HTMLFlipBook
-      // style={{ border: "1px solid black" }}
       width={300}
       height={500}
+      className="flipbook"
+      // style={{ border: "1px solid black" }}
+      startPage={0}
+      size="stretch"
+      style={{}}
+      maxWidth={0}
+      minHeight={0}
+      maxHeight={0}
+      drawShadow={false}
+      flippingTime={1000}
+      usePortrait={false}
+      startZIndex={0}
+      autoSize={true}
+      maxShadowOpacity={0}
+      showCover={false}
+      mobileScrollSupport={true}
+      clickEventForward={true}
+      useMouseEvents={true}
+      swipeDistance={0}
+      showPageCorners={true}
+      disableFlipByClick={false}
+      // children={undefined}
+      minWidth={0}
     >
       <Image src={Page_1} alt="menu-1" />
       <Image src={Page_2} alt="menu-2" />
