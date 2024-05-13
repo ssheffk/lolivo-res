@@ -1,7 +1,5 @@
 import React from "react";
-
 import HomePageDivider from "./Divider";
-import StarIcon from "./../../../assets/icons/star.svg";
 import HomePageMap from "./Map";
 import ButtonLink from "../button-link";
 import Image from "next/image";

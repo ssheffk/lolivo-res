@@ -1,7 +1,7 @@
 import React from "react";
 import HomePageDivider from "./Divider";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 import Entrance from "./../../../assets/media/main.jpeg";
 import Pizza from "./../../../assets/media/pizza-bar.jpeg";
@@ -15,7 +15,7 @@ interface HomepageAmbienceProps {
 
 interface RestaurantSection {
   title: string;
-  image: any;
+  image: StaticImageData;
 }
 
 const restaurantSections: RestaurantSection[] = [

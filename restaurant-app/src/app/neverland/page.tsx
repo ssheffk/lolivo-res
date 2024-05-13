@@ -2,12 +2,8 @@ import { GetStaticProps } from "next";
 import React from "react";
 import { PageWrapper } from "../PageWrapper";
 import ArchWithStar from "../components/ArcWithStar";
-import EventsPageEventCard from "../EventCard";
 
 import neverland from "./../../../assets/media/Neverland_.png";
-import lava from "./../../../assets/media/neverland/lava.jpg";
-import football from "./../../../assets/media/neverland/football.jpg";
-import shoot from "./../../../assets/media/neverland/shoot.jpg";
 
 import Image from "next/image";
 

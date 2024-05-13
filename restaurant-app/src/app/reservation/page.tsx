@@ -10,7 +10,7 @@ const ReservationPage: React.FC<any> = ({ header, footer, page }) => {
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto lg:max-w-[808px] xl:px-0">
             <h1 className="text-xl leading-none font-Gloock uppercase text-center mb-10 lg:text-5xl lg:leading-none lg:mb-14">
-              За резервация
+              Телефон за резервации
             </h1>
             <div className="grid grid-cols-1 gap-4 max-w-[850px] mx-auto lg:gap-6">
               <div className="border border-[#DBD9D5] rounded-[7px] p-6">

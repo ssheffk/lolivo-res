@@ -41,9 +41,7 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
         )}
         onClick={() => setShowMap((prev) => !prev)}
       >
-        {/* <a href={"https://maps.app.goo.gl/ZEzvJUTNZdTqd1Uy7"} target="_blank"> */}
         Виж карта
-        {/* </a> */}
       </button>
       <Transition
         appear={true}
@@ -67,15 +65,8 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
                 style={{ border: 0 }}
                 loading="lazy"
                 className="w-full h-auto cover rounded-[10px] overflow-hidden pointer-events-auto"
-                // referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-              {/* <Image
-                src={Map}
-                alt="map"
-                width={848}
-                height={480}
-                className="w-full h-auto cover rounded-[10px] overflow-hidden pointer-events-auto"
-              /> */}
+
               <div className="grid grid-cols-2 gap-3 mt-6 pointer-events-auto xl:hidden">
                 <ButtonLink
                   theme="fill"
