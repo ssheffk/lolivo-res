@@ -12,7 +12,9 @@ const HomepageHero: React.FC = () => {
       <div className="container">
         <div className="relative mb-[14px] lg:mb-12">
           <Image
-            src={"/front-entrance.jpeg"}
+            src={
+              "https://lolivo.bg/images/admin/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=561&a=true&file=Portugal.jpg&t=9rs5kjQFU7EdlEi&scalingup=0"
+            }
             alt="entrance"
             className="rounded-tr-[600px] rounded-tl-[600px]"
             height={500}
