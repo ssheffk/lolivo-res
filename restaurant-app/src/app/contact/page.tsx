@@ -6,7 +6,8 @@ import ArchWithStar from "../components/ArcWithStar";
 
 import ButtonLink from "../button-link";
 import Image from "next/image";
-import Map from "./../../../assets/media/location.png";
+// import Map from "./../../../assets/media/location.png";
+import { location } from "../lib/contants";
 
 const ContactPage: React.FC<any> = ({ header, footer, page }) => {
   return (
@@ -24,17 +25,14 @@ const ContactPage: React.FC<any> = ({ header, footer, page }) => {
             </p>
             <div className="bg-[#E5E4DA] rounded-2xl p-4 mb-8 lg:mb-10">
               <Image
-                src={Map}
+                src={"/location.png"}
                 alt="map"
                 width={1078}
                 height={678}
                 className="w-full h-auto cover rounded-[10px] overflow-hidden pointer-events-auto"
               />
             </div>
-            <ButtonLink
-              to="https://maps.app.goo.gl/ZEzvJUTNZdTqd1Uy7"
-              className="uppercase max-w-max mx-auto"
-            >
+            <ButtonLink to={location} className="uppercase max-w-max mx-auto">
               <span>Виж карта</span>
             </ButtonLink>
           </div>

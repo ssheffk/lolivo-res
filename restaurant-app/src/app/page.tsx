@@ -9,11 +9,11 @@ import { PageWrapper } from "./PageWrapper";
 const HomePage = () => {
   return (
     <PageWrapper>
-      <HomepageHero data={["test", "test -2 ", 3]} />
-      <HomepageMenu data={["test", "test -2 ", 3]} />
-      <HomepageAmbience data={["test", "test -2 ", 3]} />
-      <HomepageEvents data={["test", "test -2 ", 3]} items={[1, 2, 3]} />
-      <HomepageTestimonials data={["test", "test -2 ", 3]} items={[1, 2, 3]} />
+      <HomepageHero />
+      <HomepageMenu />
+      <HomepageAmbience />
+      <HomepageEvents />
+      <HomepageTestimonials />
     </PageWrapper>
   );
 };

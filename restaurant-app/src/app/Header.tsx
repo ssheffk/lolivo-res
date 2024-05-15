@@ -5,7 +5,6 @@ import classNames from "classnames";
 
 import MenuIcon from "./../../assets/icons/menu.svg";
 import XIcon from "./../../assets/icons/x.svg";
-import logo from "./../../assets/media/l-olivo.png";
 import ButtonLink from "./button-link";
 import Image from "next/image";
 
@@ -46,7 +45,7 @@ const Header: React.FC = () => {
         <nav className="relative flex items-center justify-between pt-6 lg:pt-8">
           <Link href="/" className="flex md:flex-1" aria-label="Home page">
             <div className="w-[60px] md:w-[101px]">
-              <Image alt="logo" src={logo} />
+              <Image alt="logo" src={"/l-olivo.png"} width={101} height={44} />
             </div>
           </Link>
           <ul

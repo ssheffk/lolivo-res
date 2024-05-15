@@ -1,38 +1,31 @@
 "use client";
 import HomePageDivider from "./Divider";
 import Image from "next/image";
-import Breakfast from "./../../../assets/media/breakfast.jpg";
-import Lunch from "./../../../assets/media/lunch.jpg";
-import Dinner from "./../../../assets/media/dinner.jpg";
-
-interface HomepageMenuProps {
-  data: any;
-}
 
 interface MenuItem {
   title: string;
-  image: any;
+  image: string;
 }
 
 const menuData: MenuItem[] = [
   {
     title: "Закуска",
 
-    image: Breakfast,
+    image: "/breakfast.jpg",
   },
   {
     title: "Обяд",
 
-    image: Lunch,
+    image: "/lunch.jpg",
   },
   {
     title: "Вечеря",
 
-    image: Dinner,
+    image: "/dinner.jpg",
   },
 ];
 
-const HomepageMenu: React.FC<HomepageMenuProps> = ({ data }) => {
+const HomepageMenu: React.FC = () => {
   return (
     <section>
       <div className="container">
@@ -41,10 +34,10 @@ const HomepageMenu: React.FC<HomepageMenuProps> = ({ data }) => {
             [ 1 ]
           </div>
           <h2 className="text-lg leading-none uppercase font-Gloock mb-4 lg:text-5xl lg:leading-none lg:mb-6">
-            Ние предлагаме
+            Комбинация
           </h2>
           <p className="text-sm leading-[1.3] tracking-[-0.41px] text-appGray-700 uppercase max-w-[745px] mx-auto lg:text-base lg:leading-[1.3]">
-            Ежедневно меню от
+            от ястия
           </p>
         </div>
       </div>

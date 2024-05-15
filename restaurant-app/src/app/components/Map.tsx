@@ -5,8 +5,9 @@ import classnames from "classnames";
 import ButtonLink from "../button-link";
 import Image from "next/image";
 import Map from "./../../../assets/media/map.jpg";
+import { location } from "../lib/contants";
 interface HomepageMapProps {
-  map: any;
+  map: string;
 }
 const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
   const [showMap, setShowMap] = useState<boolean>(false);
@@ -59,8 +60,7 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
           >
             <div className="relative z-10 top-4 translate-y-full bg-[#E5E4DA] rounded-2xl p-4 pb-6 xl:p-2 xl:w-[440px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14184.512735698781!2d26.936674802038837!3d43.26365834510801!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a58afa366b5d89%3A0xeb9023e0409beac8!2sShumen%20Center%2C%20ul.%20%22Spartak%22%2024%2C%209703%20Shumen!5e0!3m2!1sen!2sbg!4v1713455963896!5m2!1sen!2sbg"
-                width="400"
+                src={map}
                 height="300"
                 style={{ border: 0 }}
                 loading="lazy"
@@ -75,13 +75,6 @@ const HomepageMap: React.FC<HomepageMapProps> = ({ map }) => {
                   onClick={() => setShowMap(false)}
                 >
                   <span className="text-appText">Затвори</span>
-                </ButtonLink>
-                <ButtonLink
-                  hide-arrow
-                  className="justify-center uppercase"
-                  onClick={() => setShowMap(false)}
-                >
-                  <span>Виж карта</span>
                 </ButtonLink>
               </div>
             </div>

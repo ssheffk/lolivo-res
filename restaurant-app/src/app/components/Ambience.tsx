@@ -1,50 +1,40 @@
 import React from "react";
 import HomePageDivider from "./Divider";
 
-import Image, { StaticImageData } from "next/image";
-
-import Entrance from "./../../../assets/media/main.jpeg";
-import Pizza from "./../../../assets/media/pizza-bar.jpeg";
-import Selfie from "./../../../assets/media/selfie-podiumm.jpeg";
-import Playground from "./../../../assets/media/kids.jpeg";
-import Terrace from "./../../../assets/media/terrace.jpeg";
-import EntranceTwo from "./../../../assets/media/main2.jpeg";
-interface HomepageAmbienceProps {
-  data: any;
-}
+import Image from "next/image";
 
 interface RestaurantSection {
   title: string;
-  image: StaticImageData;
+  image: string;
 }
 
 const restaurantSections: RestaurantSection[] = [
   {
-    title: "Вътрешна зала",
-    image: Entrance,
+    title: "Бар",
+    image: "/main.jpeg",
   },
   {
     title: "Селфи зона",
-    image: Selfie,
+    image: "/selfie-podiumm.jpeg",
   },
   {
     title: "Пицария",
-    image: Pizza,
+    image: "/pizza-bar.jpeg",
   },
   {
-    title: "Селфи зона",
-    image: Playground,
+    title: "Декор",
+    image: "/kids.jpeg",
   },
   {
-    title: "Тераса",
-    image: Terrace,
+    title: "Лятна тераса",
+    image: "/terrace.jpeg",
   },
   {
-    title: "Вътрешна зала",
-    image: EntranceTwo,
+    title: "Просторна зала",
+    image: "/team-building.jpeg",
   },
 ];
-const HomepageAmbience: React.FC<HomepageAmbienceProps> = ({ data }) => {
+const HomepageAmbience: React.FC = () => {
   return (
     <section>
       <div className="container">
@@ -53,7 +43,7 @@ const HomepageAmbience: React.FC<HomepageAmbienceProps> = ({ data }) => {
             [ 2 ]
           </div>
           <h2 className="text-lg leading-none uppercase font-Gloock mb-4 lg:text-5xl lg:leading-none lg:mb-6">
-            Ресторанта разполага с
+            Ресторанта разполага
           </h2>
         </div>
         <div className="grid grid-cols-2 gap-4 auto-rows-fr lg:gap-6">
@@ -71,6 +61,8 @@ const HomepageAmbience: React.FC<HomepageAmbienceProps> = ({ data }) => {
                 src={item.image}
                 className="w-full h-full top-0 left-0 object-cover"
                 alt="ambience"
+                height={360}
+                width={640}
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black/30" />
             </div>

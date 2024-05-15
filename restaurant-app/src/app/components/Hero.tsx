@@ -3,30 +3,30 @@ import HomePageDivider from "./Divider";
 import HomePageMap from "./Map";
 import ButtonLink from "../button-link";
 import Image from "next/image";
-import Entrance from "./../../../assets/media/front-entrance.jpeg";
-interface HomepageHeroProps {
-  data: any;
-}
 
-const HomepageHero: React.FC<HomepageHeroProps> = ({ data }) => {
+import { embedLocation } from "../lib/contants";
+
+const HomepageHero: React.FC = () => {
   return (
     <section className="pt-10 md:pt-20 lg:pt-[200px]">
       <div className="container">
         <div className="relative mb-[14px] lg:mb-12">
           <Image
-            src={Entrance}
+            src={"/front-entrance.jpeg"}
             alt="entrance"
             className="rounded-tr-[600px] rounded-tl-[600px]"
+            height={500}
+            width={1400}
           />
           <div className="absolute top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-between  xl:w-full">
             <div className="flex flex-col items-end max-xl:hidden">
               <div className="text-lg leading-none mb-1.5 text-appGray-700">
                 Шумен, ул.Спартак 24
               </div>
-              <HomePageMap map={"https://maps.app.goo.gl/ZEzvJUTNZdTqd1Uy7"} />
+              <HomePageMap map={embedLocation} />
             </div>
-            <div className="h-px flex-1 bg-appGray-lolivo ml-4 max-xl:hidden" />
-            <div className="h-px flex-1 bg-appGray-lolivo mr-4 max-xl:hidden" />
+            <div className="h-px flex-1 bg-appGray-lolivo ml-4 max-xl:hidden mb-4" />
+            <div className="h-px flex-1 bg-appGray-lolivo mr-4 max-xl:hidden mb-4" />
             <div className="homeHero--openTime max-xl:hidden">
               <div className="flex flex-col items-end max-xl:hidden">
                 <div className="text-lg leading-none mb-1.5 text-appGray-700">
@@ -42,7 +42,7 @@ const HomepageHero: React.FC<HomepageHeroProps> = ({ data }) => {
         <div className="flex items-start justify-between mb-6 xl:hidden">
           <div>
             <div className="text-sm leading-none mb-1.5 lg:text-lg lg:leading-none"></div>
-            <HomePageMap map={data} />
+            <HomePageMap map={embedLocation} />
           </div>
           <div className="homeHero--openTime">
             <div className="flex flex-col items-end ">
@@ -64,7 +64,7 @@ const HomepageHero: React.FC<HomepageHeroProps> = ({ data }) => {
           </React.Fragment>
         </div>
         <ButtonLink className="uppercase max-w-max mx-auto text-appGray-lolivo">
-          <span>При нас ще откриете</span>
+          <span>Тук ще откриете</span>
         </ButtonLink>
         <HomePageDivider />
       </div>

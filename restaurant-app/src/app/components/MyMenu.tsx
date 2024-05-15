@@ -1,21 +1,21 @@
 "use client";
 import React from "react";
 import HTMLFlipBook from "react-pageflip";
-import Page_1 from "./../../../assets/media/menu/1.jpg";
-import Page_2 from "./../../../assets/media/menu/2.jpg";
-import Page_3 from "./../../../assets/media/menu/3.jpg";
-import Page_4 from "./../../../assets/media/menu/4.jpg";
-import Page_5 from "./../../../assets/media/menu/5.jpg";
-import Page_6 from "./../../../assets/media/menu/6.jpg";
-import Page_7 from "./../../../assets/media/menu/7.jpg";
-import Page_8 from "./../../../assets/media/menu/8.jpg";
-import Page_9 from "./../../../assets/media/menu/9.jpg";
-import Page_10 from "./../../../assets/media/menu/10.jpg";
-import Page_11 from "./../../../assets/media/menu/11.jpg";
-import Page_12 from "./../../../assets/media/menu/12.jpg";
-import Page_13 from "./../../../assets/media/menu/13.jpg";
-import Page_14 from "./../../../assets/media/menu/14.jpg";
-import Page_15 from "./../../../assets/media/menu/15.jpg";
+// import Page_1 from "1.jpg";
+// import Page_2 from "2.jpg";
+// import Page_3 from "3.jpg";
+// import Page_4 from "4.jpg";
+// import Page_5 from "5.jpg";
+// import Page_6 from "6.jpg";
+// import Page_7 from "7.jpg";
+// import Page_8 from "8.jpg";
+// import Page_9 from "9.jpg";
+// import Page_10 from "10.jpg";
+// import Page_11 from "11.jpg";
+// import Page_12 from "12.jpg";
+// import Page_13 from "13.jpg";
+// import Page_14 from "14.jpg";
+// import Page_15 from "15.jpg";
 
 import Image from "next/image";
 
@@ -48,22 +48,22 @@ function MyMenu(props: any) {
       // children={undefined}
       minWidth={0}
     >
-      <Image src={Page_1} alt="menu-1" />
-      <Image src={Page_2} alt="menu-2" />
-      <Image src={Page_3} alt="menu-3" />
-      <Image src={Page_4} alt="menu-4" />
-      <Image src={Page_5} alt="menu-5" />
-      <Image src={Page_6} alt="menu-6" />
-      <Image src={Page_7} alt="menu-7" />
-      <Image src={Page_8} alt="menu-8" />
-      <Image src={Page_9} alt="menu-9" />
-      <Image src={Page_10} alt="menu-10" />
-      <Image src={Page_11} alt="menu-11" />
-      <Image src={Page_12} alt="menu-12" />
-      <Image src={Page_13} alt="menu-13" />
-      <Image src={Page_14} alt="menu-14" />
-      <Image src={Page_15} alt="menu-15" />
-      <Image src={Page_1} alt="last-page" />
+      <Image src={"/1.jpg"} alt="menu-1" width="300" height="300" />
+      <Image src={"/2.jpg"} alt="menu-2" width="300" height="300" />
+      <Image src={"/3.jpg"} alt="menu-3" width="300" height="300" />
+      <Image src={"/4.jpg"} alt="menu-4" width="300" height="300" />
+      <Image src={"/5.jpg"} alt="menu-5" width="300" height="300" />
+      <Image src={"/6.jpg"} alt="menu-6" width="300" height="300" />
+      <Image src={"/7.jpg"} alt="menu-7" width="300" height="300" />
+      <Image src={"/8.jpg"} alt="menu-8" width="300" height="300" />
+      <Image src={"/9.jpg"} alt="menu-9" width="300" height="300" />
+      <Image src={"/10.jpg"} alt="menu-10 " width="300" height="300" />
+      <Image src={"/11.jpg"} alt="menu-11 " width="300" height="300" />
+      <Image src={"/12.jpg"} alt="menu-12 " width="300" height="300" />
+      <Image src={"/13.jpg"} alt="menu-13 " width="300" height="300" />
+      <Image src={"/14.jpg"} alt="menu-14 " width="300" height="300" />
+      <Image src={"/15.jpg"} alt="menu-15 " width="300" height="300" />
+      <Image src={"/1.jpg"} alt="last-pa ge" width="300" height="300" />
     </HTMLFlipBook>
   );
 }

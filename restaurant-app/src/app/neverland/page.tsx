@@ -1,9 +1,8 @@
+"use client";
 import { GetStaticProps } from "next";
 import React from "react";
 import { PageWrapper } from "../PageWrapper";
 import ArchWithStar from "../components/ArcWithStar";
-
-import neverland from "./../../../assets/media/Neverland_.png";
 
 import Image from "next/image";
 
@@ -15,7 +14,7 @@ const NeverlandPage: React.FC = () => {
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto mb-10 lg:max-w-[745px] lg:mb-20 xl:px-0">
             <Image
-              src={neverland}
+              src={"/Neverland_.png"}
               alt="neverland"
               width={1078}
               height={678}
@@ -48,40 +47,28 @@ const NeverlandPage: React.FC = () => {
   );
 };
 
-// export const getStaticProps: GetStaticProps<
-//   PageProps<EventsPageData>
-// > = async () => {
-//   const client = getBcmsClient();
-//   try {
-//     const { header, footer } = await getHeaderAndFooter(client);
-//     const eventsPage = (await client.entry.get({
-//       // Template name or ID
-//       template: "events_page",
-//       // Entry slug or ID
-//       entry: "events",
-//     })) as EventsPageEntry;
-//     if (!eventsPage) {
-//       throw new Error("Events page entry does not exist.");
-//     }
-//     const eventItems = (await client.entry.getAll({
-//       // Event item name or ID
-//       template: "event",
-//     })) as EventsPageEntry[];
-//     return {
-//       props: {
-//         header,
-//         footer,
-//         page: {
-//           meta: eventsPage.meta.en as EventsPageEntryMeta,
-//           events: eventItems.map((e) => e.meta.en) as EventEntryMeta[],
-//         },
-//       },
-//     };
-//   } catch (error) {
-//     return {
-//       notFound: true,
-//     };
-//   }
-// };
+// export const getStaticProps: GetStaticProps<any> = async () => {
+//   const postsDirectory = path.join(process.cwd(), "posts");
+//   const filenames = await fs.readdir(postsDirectory);
 
+//   const posts = filenames.map(async (filename) => {
+//     const filePath = path.join(postsDirectory, filename);
+//     const fileContents = await fs.readFile(filePath, "utf8");
+
+//     // Generally you would parse/transform the contents
+//     // For example you can transform markdown to HTML here
+
+//     return {
+//       filename,
+//       content: fileContents,
+//     };
+//   });
+//   // By returning { props: { posts } }, the Blog component
+//   // will receive `posts` as a prop at build time
+//   return {
+//     props: {
+//       posts: await Promise.all(posts),
+//     },
+//   };
+// };
 export default NeverlandPage;

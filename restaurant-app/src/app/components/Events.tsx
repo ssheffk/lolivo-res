@@ -2,37 +2,38 @@ import React from "react";
 import HomePageDivider from "./Divider";
 
 import EventsPageEventCard from "../EventCard";
-interface HomepageEventsProps {
-  data: any;
-  items: any[];
-}
 
 interface Event {
   data: string;
   title: string;
+  image: string;
 }
 
 const events: Event[] = [
   {
     data: "Рожден ден",
     title: "Рожден ден",
+    image: "/main2.jpeg",
   },
   {
     data: "Семейни мероприятия",
     title: "Семейни мероприятия",
+    image: "/family.jpeg",
   },
 
   {
     data: "Тийм билдинг",
     title: "Тийм билдинг",
+    image: "/team-building.jpeg",
   },
   {
     data: "Юбилей",
     title: "Юбилей",
+    image: "/anniversary.jpeg",
   },
 ];
 
-const HomepageEvents: React.FC<HomepageEventsProps> = ({ data, items }) => {
+const HomepageEvents: React.FC = () => {
   return (
     <section className="overflow-hidden">
       <div className="container">
@@ -51,6 +52,7 @@ const HomepageEvents: React.FC<HomepageEventsProps> = ({ data, items }) => {
               card={{
                 data: `${item.data}`,
                 title: `${item.title}`,
+                image: `${item.image}`,
               }}
             />
           ))}

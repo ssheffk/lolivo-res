@@ -1,0 +1,2 @@
+export const  location = "https://maps.app.goo.gl/mqVYfKSmVDBEqQoz8"; 
+export const embedLocation = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.5028646315914!2d26.92736039007114!3d43.261839803208964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a58b301ec8059f%3A0xc14006b41dfd99a9!2sL%E2%80%99Olivo%20Bar%20%26%20Dinner!5e0!3m2!1sen!2sbg!4v1715757950771!5m2!1sen!2sbg"

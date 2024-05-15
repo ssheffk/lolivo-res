@@ -1,14 +1,6 @@
 import React from "react";
 
-interface HomepageTestimonialsProps {
-  data: any;
-  items: any[];
-}
-
-const HomepageTestimonials: React.FC<HomepageTestimonialsProps> = ({
-  data,
-  items,
-}) => {
+const HomepageTestimonials: React.FC = () => {
   return (
     <section className="overflow-hidden pb-14 md:pb-20 lg:pb-[120px]">
       <div className="container">
