@@ -4,74 +4,43 @@ import Footer from "./Footer";
 import React, { FC, PropsWithChildren, useMemo } from "react";
 // import { PageProps } from '@/types';
 import Head from "next/head";
-import { useRouter } from "next/router";
 
 interface ExtendedProps extends PropsWithChildren<any> {
   defaultTitle?: string;
 }
-export const PageWrapper: FC<ExtendedProps> = ({
-  page,
-  header,
-  children,
-  footer,
-  defaultTitle,
-}) => {
-  // const router = useRouter();
-  // const routePath = useMemo(() => router.asPath, [router.asPath]);
-  // console.log("wrapper");
-  // const title =
-  //   // @ts-ignore
-  //   defaultTitle ?? page?.meta?.title ?? page?.meta?.seo?.title ?? "";
-
-  // const description =
-  //   // @ts-ignore
-  //   page?.meta?.seo?.description ??
-  //   "Jumpstart your Next project with this BCMS starter. Easily manage your content and scale your application without the backend hassle. Get started now!";
-  // const image = "/thumbnail.jpg";
-  // const domain = "http://localhost:3000";
-
+export const PageWrapper: FC<ExtendedProps> = ({ children }) => {
+  const title = "Ресторант - L'Olivo";
+  const description = "Ресторант с детски кът";
+  const image = "https://example.com/pasta.jpg";
+  const domain = "https://lolivo.bg";
+  const routePath = "/pasta-recipe";
   return (
     <div className="overflow-hidden">
       <Head>
-        <title>{"test"} - Tastyyy</title>
-        {/* <meta name="description" content={description} />
-        <meta property="og:site_name" content={`${title} - Tastyyy`} />
+        <title>{`L'Olivo`}</title>
+        <meta name="description" content={"Delicius rest"} />
+        <meta property="og:site_name" content={`L'Olivo`} />
         <meta property="og:type" content="website" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta
-          name="ogUrl"
-          property="og:url"
-          content={`${domain}${routePath}`}
-        />
         <meta property="og:title" content={`${title} - Tastyyy`} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
-        <meta property="twitter:url" content={`${domain}${routePath}`} />
-        <meta property="twitter:title" content={`${title} - Tastyyy`} />
+        <meta property="twitter:url" content={`${domain}`} />
+        <meta property="twitter:title" content={`L'Olivo`} />
         <meta property="twitter:description" content={description} />
-        <meta property="twitter:image" content={image} /> */}
+        <meta property="twitter:image" content={image} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Gloock&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="/favicon-16x16.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="/favicon-32x32.png"
-        />
+        <link rel="icon" type="image/png" sizes="16x16" href="/l-olivo.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/l-olivo.png" />
       </Head>
       <Header />
       <main>{children}</main>
-      <Footer data={footer} />
+      <Footer />
     </div>
   );
 };

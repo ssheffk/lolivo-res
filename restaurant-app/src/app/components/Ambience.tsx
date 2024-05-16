@@ -71,6 +71,7 @@ const HomepageAmbience: React.FC = () => {
                 alt="ambience"
                 height={360}
                 width={640}
+                priority
               />
               <div className="absolute top-0 left-0 w-full h-full bg-black/30" />
             </div>

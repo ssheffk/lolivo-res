@@ -1,7 +1,4 @@
 import React from "react";
-interface FooterProps {
-  data: any;
-}
 
 interface FooterData {
   title: string;
@@ -42,7 +39,7 @@ const footerData: FooterData[] = [
   },
 ];
 
-const Footer: React.FC<FooterProps> = ({ data }) => {
+const Footer: React.FC = () => {
   return (
     <footer className="bg-appText py-10 md:py-12">
       <div className="container">
