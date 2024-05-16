@@ -14,7 +14,9 @@ const NeverlandPage: React.FC = () => {
           <ArchWithStar />
           <div className="relative px-4 max-w-[400px] mx-auto mb-10 lg:max-w-[745px] lg:mb-20 xl:px-0">
             <Image
-              src={"/Neverland_.png"}
+              src={
+                "https://lolivo.bg/images/admin/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=561&a=true&file=Neverland__11zon.png&t=lSGlgY6REQkAdCU&scalingup=0"
+              }
               alt="neverland"
               width={1078}
               height={678}

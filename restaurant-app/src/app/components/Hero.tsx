@@ -4,22 +4,21 @@ import HomePageMap from "./Map";
 import ButtonLink from "../button-link";
 import Image from "next/image";
 
-import { embedLocation } from "../lib/contants";
+import { embedLocation, frontEntranceImage } from "../lib/contants";
 
 const HomepageHero: React.FC = () => {
   return (
     <section className="pt-10 md:pt-20 lg:pt-[200px]">
       <div className="container">
-        <div className="relative mb-[14px] lg:mb-12">
+        <div className="relative mb-[14px] lg:mb-12 ">
           <Image
-            src={
-              "https://lolivo.bg/images/admin/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=561&a=true&file=Portugal.jpg&t=9rs5kjQFU7EdlEi&scalingup=0"
-            }
+            src={frontEntranceImage}
             alt="entrance"
             className="rounded-tr-[600px] rounded-tl-[600px]"
             height={500}
             width={1400}
           />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#8b8b8b80]/50 rounded-tr-[600px] rounded-tl-[600px]" />
           <div className="absolute top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-between  xl:w-full">
             <div className="flex flex-col items-end max-xl:hidden">
               <div className="text-lg leading-none mb-1.5 text-appGray-700">

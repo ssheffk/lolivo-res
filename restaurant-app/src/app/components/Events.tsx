@@ -2,6 +2,12 @@ import React from "react";
 import HomePageDivider from "./Divider";
 
 import EventsPageEventCard from "../EventCard";
+import {
+  anniversaryImage,
+  familyImage,
+  main2Image,
+  teamBuildingImage,
+} from "../lib/contants";
 
 interface Event {
   data: string;
@@ -13,23 +19,23 @@ const events: Event[] = [
   {
     data: "Рожден ден",
     title: "Рожден ден",
-    image: "/main2.jpeg",
+    image: main2Image,
   },
   {
     data: "Семейни мероприятия",
     title: "Семейни мероприятия",
-    image: "/family.jpeg",
+    image: familyImage,
   },
 
   {
     data: "Тийм билдинг",
     title: "Тийм билдинг",
-    image: "/team-building.jpeg",
+    image: teamBuildingImage,
   },
   {
     data: "Юбилей",
     title: "Юбилей",
-    image: "/anniversary.jpeg",
+    image: anniversaryImage,
   },
 ];
 
