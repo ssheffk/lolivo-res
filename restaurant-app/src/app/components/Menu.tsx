@@ -53,7 +53,6 @@ const HomepageMenu: React.FC = () => {
               <Image
                 alt="sample"
                 src={item.image}
-                objectFit="cover"
                 fill
                 className="w-full h-full top-0 left-0 object-cover rounded-2xl"
               />

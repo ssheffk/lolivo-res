@@ -18,7 +18,7 @@ const HomepageHero: React.FC = () => {
             height={500}
             width={1400}
           />
-          <div className="absolute top-0 left-0 w-full h-full bg-[#8b8b8b80]/50 rounded-tr-[600px] rounded-tl-[600px]" />
+          <div className="absolute top-0 left-0 w-full h-full bg-black/50 rounded-tr-[600px] rounded-tl-[600px]" />
           <div className="absolute top-1 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-between  xl:w-full">
             <div className="flex flex-col items-end max-xl:hidden">
               <div className="text-lg leading-none mb-1.5 text-appGray-700">
