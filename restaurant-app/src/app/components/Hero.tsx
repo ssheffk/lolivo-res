@@ -1,10 +1,10 @@
-import React from "react";
-import HomePageDivider from "./Divider";
-import HomePageMap from "./Map";
-import ButtonLink from "../button-link";
-import Image from "next/image";
+import React from 'react';
+import HomePageDivider from './Divider';
+import HomePageMap from './Map';
+import ButtonLink from '../button-link';
+import Image from 'next/image';
 
-import { embedLocation, frontEntranceImage } from "../lib/contants";
+import { embedLocation, frontEntranceImage } from '../lib/contants';
 
 const HomepageHero: React.FC = () => {
   return (
@@ -12,7 +12,7 @@ const HomepageHero: React.FC = () => {
       <div className="container">
         <div className="relative mb-[14px] lg:mb-12 ">
           <Image
-            src={frontEntranceImage}
+            src={'/front-entrance.jpeg'}
             alt="entrance"
             className="rounded-tr-[600px] rounded-tl-[600px]"
             height={500}

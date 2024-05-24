@@ -1,7 +1,7 @@
-import React from "react";
-import HomePageDivider from "./Divider";
+import React from 'react';
+import HomePageDivider from './Divider';
 
-import Image from "next/image";
+import Image from 'next/image';
 import {
   decorImage,
   mainImage,
@@ -9,7 +9,7 @@ import {
   selfieFlowersImage,
   teamBuildingImage,
   terraceImage,
-} from "../lib/contants";
+} from '../lib/contants';
 
 interface RestaurantSection {
   title: string;
@@ -18,28 +18,28 @@ interface RestaurantSection {
 
 const restaurantSections: RestaurantSection[] = [
   {
-    title: "Бар",
-    image: mainImage,
+    title: 'Бар',
+    image: '/main.jpeg',
   },
   {
-    title: "Селфи зона",
-    image: selfieFlowersImage,
+    title: 'Селфи зона',
+    image: '/selfie-podiumm.jpeg',
   },
   {
-    title: "Пицария",
-    image: pizzaBarImage,
+    title: 'Пицария',
+    image: '/pizza-bar.jpeg',
   },
   {
-    title: "Декор",
-    image: decorImage,
+    title: 'Декор',
+    image: '/kids.jpeg',
   },
   {
-    title: "Лятна тераса",
-    image: terraceImage,
+    title: 'Лятна тераса',
+    image: '/terrace.jpeg',
   },
   {
-    title: "Просторна зала",
-    image: teamBuildingImage,
+    title: 'Просторна зала',
+    image: '/anniversiry.jpeg',
   },
 ];
 const HomepageAmbience: React.FC = () => {

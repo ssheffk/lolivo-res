@@ -1,13 +1,13 @@
-import React from "react";
-import HomePageDivider from "./Divider";
+import React from 'react';
+import HomePageDivider from './Divider';
 
-import EventsPageEventCard from "../EventCard";
+import EventsPageEventCard from '../EventCard';
 import {
   anniversaryImage,
   familyImage,
   main2Image,
   teamBuildingImage,
-} from "../lib/contants";
+} from '../lib/contants';
 
 interface Event {
   data: string;
@@ -17,25 +17,25 @@ interface Event {
 
 const events: Event[] = [
   {
-    data: "Рожден ден",
-    title: "Рожден ден",
-    image: main2Image,
+    data: 'Рожден ден',
+    title: 'Рожден ден',
+    image: '/main2.jpeg',
   },
   {
-    data: "Семейни мероприятия",
-    title: "Семейни мероприятия",
-    image: familyImage,
+    data: 'Семейни мероприятия',
+    title: 'Семейни мероприятия',
+    image: '/family.jpeg',
   },
 
   {
-    data: "Тийм билдинг",
-    title: "Тийм билдинг",
-    image: teamBuildingImage,
+    data: 'Тийм билдинг',
+    title: 'Тийм билдинг',
+    image: '/anniversiry.jpeg',
   },
   {
-    data: "Юбилей",
-    title: "Юбилей",
-    image: anniversaryImage,
+    data: 'Юбилей',
+    title: 'Юбилей',
+    image: '/hall.jpeg',
   },
 ];
 
