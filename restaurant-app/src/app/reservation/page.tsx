@@ -15,7 +15,7 @@ const ReservationPage: React.FC<any> = ({ header, footer, page }) => {
             <div className="grid grid-cols-1 gap-4 max-w-[850px] mx-auto lg:gap-6">
               <div className="border border-[#DBD9D5] rounded-[7px] p-6">
                 <h2 className="leading-none tracking-[-0.41px] font-Gloock mb-[14px] lg:text-[32px] lg:leading-none lg:mb-5">
-                  Телефон за ресторанта
+                  Ресторант
                 </h2>
                 <div className="content text-sm leading-normal tracking-[-0.41px] text-appGray-200 lg:text-lg lg:leading-normal">
                   <div className="content-primitive content--paragraph">
@@ -29,7 +29,7 @@ const ReservationPage: React.FC<any> = ({ header, footer, page }) => {
             <div className="grid grid-cols-1 gap-4 max-w-[850px] mx-auto lg:gap-6">
               <div className="border border-[#DBD9D5] rounded-[7px] p-6">
                 <h2 className="leading-none tracking-[-0.41px] font-Gloock mb-[14px] lg:text-[32px] lg:leading-none lg:mb-5">
-                  Телефон за детски кът
+                  Детски кът
                 </h2>
                 <div className="content text-sm leading-normal tracking-[-0.41px] text-appGray-200 lg:text-lg lg:leading-normal">
                   <div className="content-primitive content--paragraph">

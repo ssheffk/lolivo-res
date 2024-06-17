@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 interface FooterData {
   title: string;
@@ -7,33 +7,37 @@ interface FooterData {
 
 const footerData: FooterData[] = [
   {
-    title: "Връзки",
+    title: 'Връзки',
     content: [
       {
-        title: "Facebook",
-        link: "https://www.facebook.com/profile.php?id=61554922003302",
+        title: 'Facebook',
+        link: 'https://www.facebook.com/profile.php?id=61554922003302',
       },
       {
-        title: "Instagram",
-        link: "https://www.instagram.com/lolivo_bar_and_dinner/?igsh=MXFob2kxeDR1NGViOQ==",
-      },
-    ],
-  },
-  {
-    title: "Запитвания",
-    content: [
-      {
-        title: "0882 244 244",
-        link: "",
+        title: 'Instagram',
+        link: 'https://www.instagram.com/lolivo_bar_and_dinner/?igsh=MXFob2kxeDR1NGViOQ==',
       },
     ],
   },
   {
-    title: "Локация",
+    title: 'Запитвания',
     content: [
       {
-        title: "град Шумен, ул. Спартак 24",
-        link: "https://maps.app.goo.gl/ZEzvJUTNZdTqd1Uy7",
+        title: '0882 244 244',
+        link: '',
+      },
+      {
+        title: '0886 288 288',
+        link: '',
+      },
+    ],
+  },
+  {
+    title: 'Локация',
+    content: [
+      {
+        title: 'град Шумен, ул. Спартак 24',
+        link: 'https://maps.app.goo.gl/ZEzvJUTNZdTqd1Uy7',
       },
     ],
   },
