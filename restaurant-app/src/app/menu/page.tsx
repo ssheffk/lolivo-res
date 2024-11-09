@@ -13,14 +13,14 @@ const MenuPage: React.FC = () => {
         <ArchWithStar />
         <section className="h-full lg:h-[100vh]">
           <div className="h-full items-center grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
-            <div className="p-12">
+            <div className="lg:p-12 p-4">
               <MyMenu />
             </div>
-            <div className="p-12">
+            <div className="lg:py-12 p-4">
               <img
                 alt=""
                 src="./menu-new.jpg"
-                className=" w-full rounded-bl-3xl rounded-tr-3xl object-contain h-[600px]"
+                className=" w-full  object-contain h-[600px]"
               />
             </div>
           </div>
