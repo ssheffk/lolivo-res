@@ -89,7 +89,7 @@ function MyMenu(props: any) {
   return (
     <HTMLFlipBook
       width={300}
-      height={400}
+      height={500}
       className="flipbook"
       // style={{ border: "1px solid black" }}
       startPage={0}
@@ -120,7 +120,7 @@ function MyMenu(props: any) {
           src={page.src}
           alt={`MENU-PAGE-${index}`}
           width="300"
-          height="300"
+          height="400"
         />
       ))}
     </HTMLFlipBook>

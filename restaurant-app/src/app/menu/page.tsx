@@ -1,22 +1,30 @@
-import { PageWrapper } from "../PageWrapper";
-import ArchWithStar from "../components/ArcWithStar";
-import MyMenu from "../components/MyMenu";
+import { PageWrapper } from '../PageWrapper';
+import ArchWithStar from '../components/ArcWithStar';
+import MyMenu from '../components/MyMenu';
 
 const MenuPage: React.FC = () => {
   return (
-    <PageWrapper page={"page"} header={"header"} footer={"footer"}>
+    <PageWrapper page={'page'} header={'header'} footer={'footer'}>
       <section className="pt-[108px] pb-10 overflow-hidden md:pb-20 lg:pt-[218px] lg:pb-[120px] ">
         <h1 className="text-xl leading-none font-Gloock uppercase text-center mb-6 lg:text-5xl lg:leading-none">
           Меню
         </h1>
-        <div
-          className="container max-w-[1198px] min-h-dvh"
-          style={{ display: "ruby-text" }}
-        >
-          <ArchWithStar />
-          <div className="relative px-4 max-w-[400px] mx-auto mb-10 lg:max-w-[745px] lg:mb-20 xl:px-0"></div>
-          <MyMenu />
-        </div>
+
+        <ArchWithStar />
+        <section className="h-full lg:h-[100vh]">
+          <div className="h-full items-center grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+            <div className="p-12">
+              <MyMenu />
+            </div>
+            <div className="p-12">
+              <img
+                alt=""
+                src="./menu-new.jpg"
+                className=" w-full rounded-bl-3xl rounded-tr-3xl object-contain h-[600px]"
+              />
+            </div>
+          </div>
+        </section>
       </section>
     </PageWrapper>
   );

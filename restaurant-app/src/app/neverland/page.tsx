@@ -1,5 +1,4 @@
 'use client';
-import { GetStaticProps } from 'next';
 import React from 'react';
 import { PageWrapper } from '../PageWrapper';
 import ArchWithStar from '../components/ArcWithStar';
