@@ -19,7 +19,7 @@ const MenuPage: React.FC = () => {
             <div className="lg:py-12 p-4">
               <img
                 alt=""
-                src="./menu-new.png"
+                src="./menu-new.jpg"
                 className=" w-full  object-contain h-[600px]"
               />
             </div>
